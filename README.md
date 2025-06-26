@@ -67,5 +67,24 @@ Format: VOC (XML), converted as needed
 
 ---
 
+<<<<<<< HEAD
 Made by Bahar Khatami & Mojtaba Fattah Damavandi  
 University of Padova · 2025
+=======
+![YOLOv8 Prediction](assets/yolo_sample.png)
+*YOLOv8-X detecting multiple objects in real-world scenes.*
+
+![OWL-ViT2 Result](assets/owlvit_result1.png)
+*OWL-ViT2 zero-shot result for classes: `car`, `building`, `person`.*
+
+## 💡 Key Takeaways
+
+- **YOLOv8** provides an excellent balance between speed and accuracy for real-time applications.
+- **DETR** offers elegant, end-to-end detection but requires longer training times.
+- **RF-DETR** improves on DETR with ViT backbones and deformable attention, making it more usable in production.
+- **YOLO-NAS** achieves higher mAP with fewer FLOPs by leveraging neural architecture search.
+- **OWL-ViT2** enables zero-shot detection but suffers from lower confidence scores.
+
+
+
+>>>>>>> bf8c1d6aa3534eb54f544c283cf352cfb098468e
