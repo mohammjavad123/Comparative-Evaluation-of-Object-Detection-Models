@@ -21,7 +21,7 @@ Fine-tuned Facebook AI's DETR using ResNet backbones. COCO-to-VOC conversion and
 Based on Roboflow's Deformable DETR with ViT/DINOv2 backbones. Supports real-time inference with over 60 mAP on COCO and seamless Roboflow integration.
 
 ### 4. YOLO-NAS
-A new hybrid NAS-based model balancing speed and accuracy. Implemented using [DigitalOcean's guide](https://www.digitalocean.com/community/tutorials/yolo-nas#about-the-article) and Roboflow [documentation](https://docs.ultralytics.com/models/yolo-nas/).
+A new hybrid NAS-based model balancing speed and accuracy. Implemented using Roboflow [documentation](https://docs.ultralytics.com/models/yolo-nas/).
 
 ### 5. OWL-ViT2
 Evaluated without fine-tuning. Zero-shot object detection using natural language prompts and HuggingFace's OWL-ViT2 base model.
@@ -34,11 +34,11 @@ Evaluated without fine-tuning. Zero-shot object detection using natural language
 | YOLOv8-M       | 0.71   | 0.73      | 0.61   |
 | YOLOv8-L       | 0.74   | 0.77      | 0.64   |
 | YOLOv8-X       | 0.76   | 0.79      | 0.67   |
-| DETR-R50       | 0.720  | —         | 0.710  |
-| DETR-R101      | 0.721  | —         | 0.730  |
+| DETR-R50       | 0.720  | 0.70      | 0.710  |
+| DETR-R101      | 0.721  | 0.71      | 0.730  |
 | RF-DETR        | 0.74   | 0.75      | 0.72   |
-| YOLO-NAS       | —      | —         | —      |
-| OWL-ViT2       | —      | —         | —      |
+| YOLO-NAS       | 0.62   |0.64       | 0.63   |
+
 
 _Note: OWL-ViT2 results are qualitative, focusing on zero-shot capability._
 
@@ -65,26 +65,7 @@ The report includes:
 Dataset used: [Roboflow VOC 2012 Export](https://universe.roboflow.com/jacob-solawetz/pascal-voc-2012/dataset/13)  
 Format: VOC (XML), converted as needed
 
----
-
-<<<<<<< HEAD
-Made by Bahar Khatami & Mojtaba Fattah Damavandi  
-University of Padova · 2025
-=======
-![YOLOv8 Prediction](assets/yolo_sample.png)
-*YOLOv8-X detecting multiple objects in real-world scenes.*
-
-![OWL-ViT2 Result](assets/owlvit_result1.png)
-*OWL-ViT2 zero-shot result for classes: `car`, `building`, `person`.*
-
-## 💡 Key Takeaways
-
-- **YOLOv8** provides an excellent balance between speed and accuracy for real-time applications.
-- **DETR** offers elegant, end-to-end detection but requires longer training times.
-- **RF-DETR** improves on DETR with ViT backbones and deformable attention, making it more usable in production.
-- **YOLO-NAS** achieves higher mAP with fewer FLOPs by leveraging neural architecture search.
-- **OWL-ViT2** enables zero-shot detection but suffers from lower confidence scores.
 
 
 
->>>>>>> bf8c1d6aa3534eb54f544c283cf352cfb098468e
+
