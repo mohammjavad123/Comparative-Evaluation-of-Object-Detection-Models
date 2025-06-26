@@ -82,14 +82,5 @@ We used the **PASCAL VOC 2012** dataset, downloaded in a pre-split and curated f
 - **YOLO-NAS** achieves higher mAP with fewer FLOPs by leveraging neural architecture search.
 - **OWL-ViT2** enables zero-shot detection but suffers from lower confidence scores.
 
-## 🧠 Authors
 
-- **Bahar Khatami** — *University of Padova*  
-- **Mojtaba Fattah Damavandi** — *University of Padova*
 
-## 📌 Future Work
-
-- Add mAP@0.5:0.95 comparisons across models
-- Evaluate on larger datasets (e.g., MS COCO, OpenImages)
-- Extend to video-based detection tasks
-- Improve OWL-ViT2 by using prompt engineering and better text embeddings
